@@ -1,0 +1,33 @@
+$color: #333333;
+$radius:2px;
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+  color: $color;
+
+  .counter-container {
+    display: flex;
+
+    .count {
+      font-size: 64px;
+      padding: 32px;
+      border: 1px solid $color;
+      border-radius: $radius;
+      margin: 0 4px; //left and right margin = 8px;
+    }
+  }
+
+  .reset {
+    font-size: 8px;
+    padding: 4px 8px;
+    border-radius: $radius;
+    margin-top: 8px;
+    border: 1px solid $color;
+    color: inherit;
+  }
+}
